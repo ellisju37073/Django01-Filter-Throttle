@@ -42,7 +42,7 @@ class GameCategoryList(generics.ListCreateAPIView):
     name = 'gamecategory-list'
     throttle_scope = 'game-categories'
     throttle_classes = (ScopedRateThrottle,)
-    filter_fields = ('name',)
+    filterset_fields = ('name',)
     search_fields = ('^name',)
     ordering_fields = ('name',)
 

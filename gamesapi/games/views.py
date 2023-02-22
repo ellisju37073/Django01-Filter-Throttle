@@ -116,7 +116,7 @@ class PlayerDetail(generics.RetrieveUpdateDestroyAPIView):
 class PlayerScoreFilter(filters.FilterSet):
     #https://stackoverflow.com/questions/51850985/django-filter-typeerror-at-goods-init-got-an-unexpected-keyword-argumen
     #https://django-filter.readthedocs.io/en/latest/guide/rest_framework.html
-    # Download Bootstrap3 and put it in the django templates
+    # Download Bootstrap3 and put it in the django templates in this location C:\Users\ellis\PythonREST\Django01\Lib\site-packages\django\contrib\admin\templates\bootstrap3\
     min_score = filters.NumberFilter(
         field_name='score', lookup_expr='gte')
     max_score = filters.NumberFilter(
